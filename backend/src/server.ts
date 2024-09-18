@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-misused-promises */
 import express from 'express';
 import 'dotenv/config';
 import 'express-async-errors';
@@ -7,6 +7,7 @@ import { errorHandler } from './middlewares/error.middleware';
 import { logger, morganMiddleware } from './config/logger';
 import helmet from 'helmet';
 import compression from 'compression';
+import db from './config/database';
 
 // Validate environment variables
 
@@ -50,9 +51,11 @@ server.get('/health', (req, res) => {
 // Error handling middleware
 server.use(errorHandler);
 
-// Start the server
-server.listen(PORT, () => {
+// Start Server and Connect to Database
+server.listen(PORT, async () => {
     logger.info(`Server is running at http://localhost:${PORT}`);
+    await db.connect();
+    if (!db.status) process.exit(1);
 });
 
 // Unhandled promise rejection handler
