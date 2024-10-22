@@ -40,6 +40,8 @@ const Register: React.FC = () => {
     }
   };
   return (
+
+
     <div className="r-container">
 
 
