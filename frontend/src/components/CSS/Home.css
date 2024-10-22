@@ -1,3 +1,12 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+    background-color: #fdf9f4;
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -6,8 +15,10 @@
     background-color: #fdf9f4;
     padding: 2rem;
     border-radius: 1rem;
-    width: 100vw;
+
     box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
@@ -23,8 +34,11 @@
 
 .HeaderImageWrapper,
 .image-wrapper {
-    flex: 1;
+
     text-align: center;
+    flex: 1 1 0;
+    /* Allow flex items to shrink/grow based on content */
+    min-width: 0;
 }
 
 .header-image,
@@ -36,9 +50,12 @@
 }
 
 .HeaderText {
-    flex: 1;
+
     padding: 1rem;
     text-align: center;
+    flex: 1 1 0;
+    /* Allow flex items to shrink/grow based on content */
+    min-width: 0;
 }
 
 
@@ -48,10 +65,13 @@
     align-items: center;
     justify-content: space-between;
     background-color: #fdf9f4;
-    width: 100%;
     gap: 1rem;
     margin-top: 1rem;
     padding: 2rem;
+    width: 100vw;
+    /* Ensure the section covers full width of the viewport */
+    box-sizing: border-box;
+    /* Ensure padding doesn't cause overflow */
 }
 
 @media (max-width: 1000px) {
@@ -144,7 +164,9 @@
     background-color: #ffc425;
     padding: 2rem;
     border-radius: 1rem;
-    width: 100%;
+    max-width: 1350px;
+
+    margin: 0 auto;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
 }
@@ -201,5 +223,33 @@
 
     .navbar a {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-image,
+    .image {
+        width: 100%;
+        /* Make images responsive and cover full width */
+    }
+
+    .review {
+        width: 90%;
+        /* Scale down review containers */
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+        /* Adjust margins for better spacing */
+    }
+
+    .navbar a {
+        font-size: 20px;
+        /* Adjust link size */
     }
 }
