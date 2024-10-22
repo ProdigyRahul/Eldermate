@@ -1,0 +1,105 @@
+.c-container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('F:/ElderMate/Frontend/src/assets/Bg2.png');
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container h2 {
+    margin-bottom: 1rem;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.form-container button {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #517f68;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.form-group label {
+    text-align: left;
+}
+
+.form-group input {
+    flex: 1 0 auto;
+}
+
+.h2 {
+    font-family: 'Yeseva One', serif;
+    color: #517f68;
+}
+
+.role-select {
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.role-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3b755f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.c-form-side {
+    border-width: 10px;
+    border-radius: 10px;
+    border-style: ridge;
+    width: 400px;
+    padding: 100px;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .c-form-side {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .role-select {
+        flex-direction: column;
+    }
+
+    .form-container input,
+    .form-container button {
+        width: 100%;
+    }
+}
