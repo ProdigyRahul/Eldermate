@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     width: 100vw;
-    background-image: url('F:/ElderMate/Frontend/src/assets/Bg2.png');
+    background-image: url('/frontend//src/assets/Bg2.png');
     background-size: cover;
     background-position: center;
     align-items: center;

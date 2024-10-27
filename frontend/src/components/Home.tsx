@@ -14,9 +14,9 @@ import './CSS/Home.css';
 const Home = () => {
   return (
     <section className="section">
-      <img src={logo} alt="ElderMate Logo" />
+      <img className='logoimage' src={logo} alt="ElderMate Logo" />
 
-      <nav className="navbar">
+      {/* <nav className="navbar">
         <ul>
           <li><Link to='/'>HOME</Link></li>
           <li><Link to='/about'>ABOUT</Link></li>
@@ -24,7 +24,7 @@ const Home = () => {
           <li><Link to='/events'>EVENTS</Link></li>
           <li><Link to='/contact'>CONTACT</Link></li>
         </ul>
-      </nav>
+      </nav> */}
 
       <div className="HeaderSection">
         <div className="HeaderImageWrapper">
@@ -45,7 +45,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="section1">
+      {/* <div className="section1">
         <div className="image-wrapper">
           <img className="image" src={img2} alt="Companion and elderly person" />
         </div>
@@ -53,9 +53,9 @@ const Home = () => {
           <h1 className="heading">Experience the Delight of Quality Time</h1>
           <p className="description">Our Goodfellows are always ready to listen with a caring heart.</p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="section1">
+      {/* <div className="section1">
         <div className="text-wrapper">
           <h1 className="heading">Tech-savvy youth bridge the digital divide</h1>
           <p className="description">Our Young Mates are here to guide you through the digital world.</p>
@@ -73,9 +73,9 @@ const Home = () => {
           <h1 className="heading">Enjoy the company while you walk</h1>
           <p className="description">Let's explore together, whether it's for a casual stroll or a specific destination.</p>
         </div>
-      </div>
+      </div> */}
 
-      <div className="section1">
+      {/* <div className="section1">
         <div className="text-wrapper">
           <h1 className="heading">Need help with daily errands?</h1>
           <p className="description">Our Young Mates are here to assist you with shopping, appointments, and more.</p>
@@ -114,7 +114,7 @@ const Home = () => {
             My ElderMate companion has been a wonderful source of company and support. We go for walks together and have the best conversations. It's like having a friend to share my days with.
           </p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

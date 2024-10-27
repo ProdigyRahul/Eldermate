@@ -44,7 +44,6 @@ const Register: React.FC = () => {
 
     <div className="r-container">
 
-
       <div className="r-image-side">
         <img src={reg} />
       </div>
