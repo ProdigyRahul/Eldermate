@@ -9,6 +9,7 @@ import CompleteProfile from './components/CompleteProfile'
 import GrandpalForm from './components/GrandpalForm'
 import About from './components/About';
 import Contact from './components/Contact'
+import Services from './components/Services';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/grandpalForm' element={<GrandpalForm />}></Route>
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/services' element={<Services />}></Route>
         </Routes>
       </Router>
     </>
