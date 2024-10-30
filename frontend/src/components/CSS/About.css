@@ -1,0 +1,74 @@
+.about-container {
+    text-align: center;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.mission-section,
+.what-we-do-section,
+.founders-section {
+    margin-bottom: 40px;
+}
+
+.mission-box,
+.what-we-do-box {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Yeseva One', serif;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: 'Yeseva One', serif;
+}
+
+.founders-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    gap: 40px;
+}
+
+.founder {
+    text-align: center;
+    width: 100%;
+    /* Responsive width */
+    max-width: 200px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-family: 'Yeseva One', serif;
+}
+
+.founder p {
+    font-size: 1em;
+}

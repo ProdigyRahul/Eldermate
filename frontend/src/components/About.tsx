@@ -1,30 +1,48 @@
-import React from 'react'
+import React from 'react';
+import './CSS/About.css';
+import rahul from '../assets/Rahul.png'
+import melita from '../assets/Melita.png'
 
-type Props = {}
-
-function About({ }: Props) {
+const About: React.FC = () => {
     return (
-        <div>
+        <div className="about-container">
             <h1>About Us</h1>
-            <div className='about'>
-                <h2>Our Mission</h2>
-                <p>At ElderMate, we believe that no one should feel alone, especially our elders. We’re committed to building meaningful relationships between seniors and compassionate individuals who provide companionship, assistance, and emotional support. Our platform connects young people and volunteers with the elderly to foster a sense of family, making sure that seniors feel loved, valued, and supported throughout their golden years.</p>
-            </div>
-            <div className='about'>
-                <h2>What we do</h2>
-                <p></p>
-            </div>
-            <h1>Founders</h1>
-            <div className='about'>
-                <h2>Rahul Mistry</h2>
-                <p></p>
-            </div>
-            <div className='about'>
-                <h2>Melita Castelino</h2>
-                <p></p>
-            </div>
-        </div>
-    )
-}
 
-export default About
+            <section className="mission-section">
+                <h2>Our Mission</h2>
+                <div className="mission-box">
+                    <p>
+                        At ElderMate, we believe that no one should feel alone, especially our elders. We're committed to building meaningful relationships between seniors and compassionate individuals who provide companionship, assistance, and emotional support.
+                    </p>
+                </div>
+            </section>
+
+            <section className="what-we-do-section">
+                <h2>What we do?</h2>
+                <div className="what-we-do-box">
+                    <p>
+                        Our platform connects young people and volunteers with the elderly to foster a sense of family, making sure that seniors feel loved, valued, and supported throughout their golden years.
+                    </p>
+                </div>
+            </section>
+
+            <section className="founders-section">
+                <h2>Founders</h2>
+                <div className="founders-container">
+                    <div className="founder">
+                        <img src={rahul} alt="Rahul Mistry" className="founder-image" />
+                        <h3>Rahul Mistry</h3>
+                        <p>Founder Description Here</p>
+                    </div>
+                    <div className="founder">
+                        <img src={melita} alt="Melita Castelino" className="founder-image" />
+                        <h3>Melita Castelino</h3>
+                        <p>Founder Description Here</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default About;
