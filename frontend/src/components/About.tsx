@@ -32,12 +32,12 @@ const About: React.FC = () => {
                     <div className="founder">
                         <img src={rahul} alt="Rahul Mistry" className="founder-image" />
                         <h3>Rahul Mistry</h3>
-                        <p>Founder Description Here</p>
+                        <p>I am just a Tech!</p>
                     </div>
                     <div className="founder">
                         <img src={melita} alt="Melita Castelino" className="founder-image" />
                         <h3>Melita Castelino</h3>
-                        <p>Founder Description Here</p>
+                        <p>Hello</p>
                     </div>
                 </div>
             </section>
