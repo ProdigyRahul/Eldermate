@@ -1,12 +1,29 @@
-.c-container {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
     display: flex;
-    height: 100vh;
-    width: 100vw;
-    background-image: url('F:/ElderMate/Frontend/src/assets/Bg2.png');
-    background-size: cover;
-    background-position: center;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('F:/Eldermate-1/frontend/src/assets/Bg2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.c-container {
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .form-container {
@@ -16,21 +33,34 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    max-width: 700px;
+    width: 100%;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.9);
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-container h2 {
     margin-bottom: 1rem;
+    font-family: 'Yeseva One', serif;
+    color: #517f68;
 }
 
 .form-container label {
     display: block;
     margin-top: 1rem;
+    text-align: left;
+    width: 100%;
 }
 
 .form-container input {
     width: 100%;
     padding: 0.5rem;
     margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .form-container button {
@@ -41,27 +71,16 @@
     border: none;
     cursor: pointer;
     width: 100%;
-}
-
-.form-group label {
-    text-align: left;
-}
-
-.form-group input {
-    flex: 1 0 auto;
-}
-
-.h2 {
-    font-family: 'Yeseva One', serif;
-    color: #517f68;
+    border-radius: 5px;
 }
 
 .role-select {
-    flex: 0.5;
     display: flex;
     flex-direction: row;
     gap: 20px;
     align-items: center;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .role-button {
@@ -71,35 +90,52 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
     color: #fff;
 }
 
 .c-form-side {
-    border-width: 10px;
+    border: 2px ridge #517f68;
     border-radius: 10px;
-    border-style: ridge;
-    width: 400px;
-    padding: 100px;
+    width: 100%;
+    padding: 50px;
+    background-color: #f9f9f9;
 }
 
-@media (max-width: 768px) {
-    .form-container {
-        width: 90%;
-        padding: 20px;
-    }
 
-    .c-form-side {
-        width: 100%;
-        padding: 50px;
+@media (max-width: 992px) {
+    .form-container {
+        max-width: 90%;
+
+        padding: 20px;
     }
 
     .role-select {
         flex-direction: column;
+        gap: 15px;
     }
 
     .form-container input,
     .form-container button {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .c-container {
+        padding: 10px;
+    }
+
+    .c-form-side {
+        padding: 30px;
+    }
+
+    .role-button {
+        padding: 10px;
     }
 }

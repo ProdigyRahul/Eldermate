@@ -1,15 +1,17 @@
 // CompleteProfile.js
 import React, { useState } from 'react';
-import '../components/CSS/GrandpalForm.css'
+import '../components/CSS/MateForm.css'
 import { Link, useNavigate } from 'react-router-dom';
 
-const GrandpalForm: React.FC = () => {
+const MateForm: React.FC = () => {
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
-    const [status, setStatus] = useState('');
-    const [disease, setDisease] = useState('');
+    const [profession, setProfession] = useState('');
     const [reason, setReason] = useState('');
-    const [children, setChildren] = useState('');
+    const [availability, setAvailability] = useState('');
+    const [typeOfEngagement, setTypeOfEngagement] = useState('');
+    const [referral, setReferral] = useState('');
+    const [skills, setSkills] = useState('');
 
     const handleSubmit = async (event: React.FormEvent) => {
         event.preventDefault();
@@ -17,19 +19,20 @@ const GrandpalForm: React.FC = () => {
         const mateData = {
             name,
             age,
-            status,
-            disease,
+            profession,
             reason,
-            children
+            availability,
+            referral,
+            skills,
         };
 
 
-        /*
+
         try {
             const response = await fetch('/api/profile', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify(profileData),
+                body: JSON.stringify(mateData),
             });
 
             const data = await response.json();
@@ -43,17 +46,17 @@ const GrandpalForm: React.FC = () => {
             alert('An error occurred while completing the profile.');
             console.error('Error:', error);
         }
-        */
+
     };
 
     return (
-        <div className="g-container">
-            <div className='g-form-side'>
+        <div className="m-container">
+            <div className='m-form-side'>
                 <div className="form-container">
-                    <h2>Grandpal's Info</h2>
+                    <h2>Mate's Info</h2>
                     <form onSubmit={handleSubmit}>
                         <div className="form-group">
-                            <label htmlFor="name">Name of the Grandpal:</label>
+                            <label htmlFor="name">Name:</label>
                             <input
                                 type="text"
                                 id="name"
@@ -63,7 +66,7 @@ const GrandpalForm: React.FC = () => {
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="age">Age of the Grandpal:</label>
+                            <label htmlFor="age">Age:</label>
                             <input
                                 type="text"
                                 id="age"
@@ -73,34 +76,22 @@ const GrandpalForm: React.FC = () => {
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="status">What is your current status?</label>
-                            <input
-                                type="text"
-                                id="status"
-                                value={status}
-                                onChange={(e) => setStatus(e.target.value)}
-                                required
-                            />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="disease">Does the grandpal have any of the following?</label>
+                            <label htmlFor="profession">Profession:</label>
                             <select
-                                className='select-disease'
-                                id="disease"
-                                value={disease}
-                                onChange={(e) => setDisease(e.target.value)}
-                                required>
-                                <option value="">Select</option>
-                                <option value="Alzheimer's">Alzheimer's</option>
-                                <option value="Parkinson's">Parkinson's</option>
-                                <option value="Dementia">Dementia</option>
-                                <option value="Any other neurological disease">Any other neurological disease</option>
+                                id="profession"
+                                value={profession}
+                                onChange={(e) => setProfession(e.target.value)}
+                                required
+                            >
+                                <option value="">Select Profession</option>
+                                <option value="Student">Student</option>
+                                <option value="Business">Business</option>
+                                <option value="Working">Working</option>
 
                             </select>
                         </div>
                         <div className="form-group">
-                            <label htmlFor="reason">Why do you think they would need a Goodlfellow?
-                            </label>
+                            <label htmlFor="reason">Reason for providing assistance:</label>
                             <input
                                 type="text"
                                 id="reason"
@@ -110,16 +101,51 @@ const GrandpalForm: React.FC = () => {
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="children">Do they have sons and daughters? If yes please provide details</label>
+                            <label htmlFor="availability">Availability:</label>
                             <input
                                 type="text"
-                                id="children"
-                                value={children}
-                                onChange={(e) => setChildren(e.target.value)}
+                                id="availability"
+                                value={availability}
+                                onChange={(e) => setAvailability(e.target.value)}
                                 required
                             />
                         </div>
-                        <Link to='/' className='button'>Submit</Link>
+                        <div className="form-group">
+                            <label htmlFor="typeOfEngagement">Type of Engagement:</label>
+                            <select
+                                id="typeOfEngagement"
+                                value={typeOfEngagement}
+                                onChange={(e) => setTypeOfEngagement(e.target.value)}
+                                required
+                            >
+                                <option value="">Select Engagement Type</option>
+                                <option value="One-One">One-One</option>
+                                <option value="Group Activities">Group Activities</option>
+                                <option value="Virtual Support">Virtual Support</option>
+                                <option value="As Needed">As Needed</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="referral">How did you hear about us?</label>
+                            <input
+                                type="text"
+                                id="referral"
+                                value={referral}
+                                onChange={(e) => setReferral(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="skills">Skills and Interests:</label>
+                            <input
+                                type="text"
+                                id="skills"
+                                value={skills}
+                                onChange={(e) => setSkills(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <button type="submit" className="button">Submit</button>
                     </form>
                 </div>
             </div>
@@ -127,4 +153,4 @@ const GrandpalForm: React.FC = () => {
     );
 };
 
-export default GrandpalForm;
+export default MateForm;

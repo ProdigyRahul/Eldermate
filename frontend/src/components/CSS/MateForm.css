@@ -17,7 +17,7 @@ html {
 }
 
 
-.g-container {
+.m-container {
     display: flex;
     height: auto;
     width: 100%;
@@ -82,7 +82,7 @@ html {
     margin-top: 0.5rem;
 }
 
-.g-form-side {
+.m-form-side {
     border-width: 10px;
     border-radius: 10px;
     border-style: ridge;
@@ -95,7 +95,7 @@ html {
         padding: 10px;
     }
 
-    .g-form-side {
+    .m-form-side {
         height: auto;
         padding: 10px;
     }

@@ -1,0 +1,62 @@
+.testimonial-card {
+    width: 300px;
+    /* Ensure fixed width */
+    padding: 20px;
+    color: #517f68;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+    flex-shrink: 0;
+    z-index: 0;
+}
+
+.imageURL {
+    width: 5%;
+    /* Adjust image width to fit within the card */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: match card border radius */
+    margin-bottom: 15px;
+}
+
+.testimonial-card h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h3 {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.testimonial-text {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    line-height: 1.4;
+}
+
+.rating {
+    font-size: 1rem;
+    color: #ffeb3b;
+    margin: 10px 0;
+}
+
+.cta-button {
+    background-color: #ffffff;
+    color: inherit;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}

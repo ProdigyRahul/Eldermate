@@ -10,6 +10,9 @@ import GrandpalForm from './components/GrandpalForm'
 import About from './components/About';
 import Contact from './components/Contact'
 import Services from './components/Services';
+import Testimonials from './components/Testimonials';
+import MateForm from './components/MateForm';
+
 
 
 function App() {
@@ -27,6 +30,8 @@ function App() {
           <Route path='/about' element={<About />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/services' element={<Services />}></Route>
+          <Route path='/testimonial' element={<Testimonials />}></Route>
+          <Route path='/mateForm' element={<MateForm />}></Route>
         </Routes>
       </Router>
     </>
