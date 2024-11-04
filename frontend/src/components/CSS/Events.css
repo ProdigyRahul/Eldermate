@@ -17,7 +17,7 @@ h1 {
     font-size: 1rem;
 }
 
-.services-container {
+.event-container {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
@@ -28,12 +28,12 @@ h1 {
     scrollbar-width: none;
 }
 
-.services-container::-webkit-scrollbar {
+.event-container::-webkit-scrollbar {
     display: none;
 }
 
 
-.section-1 {
+.section-2 {
     flex: 0 0 80%;
     justify-content: center;
     align-items: center;
@@ -51,8 +51,8 @@ h1 {
 }
 
 
-.image-wrapper-1,
-.text-wrapper-1 {
+.image-wrapper-2,
+.text-wrapper-2 {
     display: flex;
     justify-content: center;
     align-items: center;

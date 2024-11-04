@@ -12,6 +12,8 @@ import Contact from './components/Contact'
 import Services from './components/Services';
 import Testimonials from './components/Testimonials';
 import MateForm from './components/MateForm';
+import Events from './components/Events';
+
 
 
 
@@ -32,6 +34,7 @@ function App() {
           <Route path='/services' element={<Services />}></Route>
           <Route path='/testimonial' element={<Testimonials />}></Route>
           <Route path='/mateForm' element={<MateForm />}></Route>
+          <Route path='/Events' element={<Events />}></Route>
         </Routes>
       </Router>
     </>
