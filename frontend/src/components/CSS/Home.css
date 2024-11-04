@@ -3,7 +3,7 @@ html {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
     background-color: #fdf9f4;
 }
 
@@ -34,7 +34,7 @@ html {
 }
 
 .logoimage {
-    width: 50%;
+    width: 35%;
 
 }
 
@@ -172,8 +172,7 @@ html {
     border-radius: 1rem;
     max-width: 1350px;
     margin: 0 auto;
-    margin-left: 15rem;
-    margin-right: 0.5rem;
+    width: 100%;
 }
 
 @media (max-width: 1000px) {
@@ -188,12 +187,12 @@ html {
 
 
 .navbar {
-    background-color: #fdf9f4;
+
     padding: 5px 10px;
     align-items: center;
     margin-top: 0;
     position: relative;
-    top: -60px;
+    top: -100px;
 }
 
 .navbar ul {
@@ -212,7 +211,8 @@ html {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .navbar a:hover {

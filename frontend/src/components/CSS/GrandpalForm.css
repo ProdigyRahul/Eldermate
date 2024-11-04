@@ -4,16 +4,13 @@
     padding: 0;
 }
 
-body,
-html {
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
-    background-image: url('F:/Eldermate-1/frontend/src/assets/Bg2.png');
-    background-size: cover;
-    background-position: center;
+
 }
 
 
@@ -24,6 +21,9 @@ html {
     max-width: 1200px;
     align-items: center;
     justify-content: center;
+    background-image: url('F:/Eldermate-1/frontend/src/assets/Bg2.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .form-container {

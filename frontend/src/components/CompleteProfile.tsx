@@ -13,7 +13,7 @@ const CompleteProfile: React.FC = () => {
     const [city, setCity] = useState('');
     const [bio, setBio] = useState('');
     const [interests, setInterests] = useState('');
-
+    const [languages, setLanguages] = useState('');
     const [role, setRole] = useState('');
 
     const handleSubmit = async (event: React.FormEvent) => {
@@ -147,6 +147,16 @@ const CompleteProfile: React.FC = () => {
                                     id="interests"
                                     value={interests}
                                     onChange={(e) => setInterests(e.target.value)}
+                                    required
+                                />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="languages">Languages:</label>
+                                <input
+                                    type="text"
+                                    id="languages"
+                                    value={languages}
+                                    onChange={(e) => setLanguages(e.target.value)}
                                     required
                                 />
                             </div>

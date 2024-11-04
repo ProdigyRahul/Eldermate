@@ -1,9 +1,9 @@
-// CompleteProfile.js
-import React, { useState } from 'react';
-import '../components/CSS/MateForm.css'
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react'
+import './CSS/MateForm.css'
 
-const MateForm: React.FC = () => {
+
+export default function MateForm() {
+
     const [name, setName] = useState('');
     const [age, setAge] = useState('');
     const [profession, setProfession] = useState('');
@@ -78,6 +78,7 @@ const MateForm: React.FC = () => {
                         <div className="form-group">
                             <label htmlFor="profession">Profession:</label>
                             <select
+                                className='select-profession'
                                 id="profession"
                                 value={profession}
                                 onChange={(e) => setProfession(e.target.value)}
@@ -113,6 +114,7 @@ const MateForm: React.FC = () => {
                         <div className="form-group">
                             <label htmlFor="typeOfEngagement">Type of Engagement:</label>
                             <select
+                                className='select-engagement'
                                 id="typeOfEngagement"
                                 value={typeOfEngagement}
                                 onChange={(e) => setTypeOfEngagement(e.target.value)}
@@ -150,7 +152,6 @@ const MateForm: React.FC = () => {
                 </div>
             </div>
         </div>
+
     );
 };
-
-export default MateForm;

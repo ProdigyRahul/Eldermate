@@ -14,6 +14,7 @@ html {
     background-image: url('F:/Eldermate-1/frontend/src/assets/Bg2.png');
     background-size: cover;
     background-position: center;
+
 }
 
 .c-container {
@@ -24,6 +25,7 @@ html {
     align-items: center;
     justify-content: center;
     padding: 20px;
+
 }
 
 .form-container {
