@@ -17,6 +17,7 @@ function Events() {
                         <h1 className="heading">Dance to the Rhythm of Joyful Moments</h1>
                         <p className="description">Let the music lift your spirits and the company fill your heart, as we create an evening of song and dance.</p>
                     </div>
+                    <button className='button1'>Join Now</button>
                 </div>
 
                 <div className="section-1">
@@ -27,6 +28,7 @@ function Events() {
                     <div className="image-wrapper-2">
                         <img className="image" src={ev2} alt="Companion and elderly person" />
                     </div>
+                    <button className='button1'>Join Now</button>
                 </div>
 
                 <div className="section-1">
@@ -37,6 +39,7 @@ function Events() {
                         <h1 className="heading">Unleash Your Creativity, One Brushstroke at a Time</h1>
                         <p className="description">Discover the joy of art with fellow creators, crafting memories and masterpieces alike.Join us for a refreshing trek and picnic, where nature’s beauty meets delightful company.</p>
                     </div>
+                    <button className='button1'>Join Now</button>
                 </div>
 
                 {/* <div className="section-1">
